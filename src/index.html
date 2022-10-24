@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LongLife Generator</title>
+</head>
+
+<body>
+  <center>
+    <nav-bar></nav-bar>
+  </center>
+  <main id="container">
+    <ask-bar></ask-bar>
+    <div class="row">
+      <div class="col col-sm-6">
+        <the-time id="theTime" hidden></the-time>
+      </div>
+      <div class="col col-sm-6">
+        <div id="listBook"></div>
+      </div>
+    </div>
+  </main>
+</body>
+<footer>
+  2022 <a href="https://github.com/fabilqis" style="color:white;" target=”_blank”>&#169;FaBilqis</a>
+</footer>
+<script>
+  function toProperCase(small) {
+    return small.replace(/\w\S*/g, function (to) {
+      return to.charAt(0).toUpperCase() + to.substr(1).toLowerCase();
+    })
+  }
+</script>
+</html>
